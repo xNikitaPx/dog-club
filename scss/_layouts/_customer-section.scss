@@ -1,0 +1,136 @@
+.customer-section {
+  &__title {
+    position: relative;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 24px;
+    }
+
+    &::before {
+      position: absolute;
+      left: -102px;
+      bottom: -620px;
+      background-image: url(../../images/custumer-section-paw-1.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 120px;
+      height: 260px;
+      content: "";
+
+      @media screen and (max-width: $bp-desktop) {
+        display: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      right: -80px;
+      bottom: -70px;
+      background-image: url(../../images/custumer-section-paw-3.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 98px;
+      height: 98px;
+      content: "";
+
+      @media screen and (max-width: $bp-desktop) {
+        top: 510px;
+        left: 0;
+        width: 48px;
+        height: 48px;
+      }
+
+      @media screen and (max-width: $bp-tablet) {
+        top: 490px;
+        left: 30px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        top: 480px;
+        left: 20px;
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -120px;
+      left: -10px;
+      background-image: url(../../images/custumer-section-paw-2.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 72px;
+      height: 72px;
+      content: "";
+
+      @media screen and (max-width: $bp-desktop) {
+        display: none;
+      }
+    }
+
+    &::after {
+      display: none;
+
+      @media screen and (max-width: $bp-desktop) {
+        display: block;
+        position: absolute;
+        right: 200px;
+        bottom: -10px;
+        background-image: url(../../images/custumer-section-mobile-paw-1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        content: "";
+      }
+
+      @media screen and (max-width: $bp-tablet) {
+        display: block;
+        position: absolute;
+        right: 100px;
+        bottom: -10px;
+        background-image: url(../../images/custumer-section-mobile-paw-1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        content: "";
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        right: 0;
+        bottom: -10px;
+      }
+    }
+  }
+
+  &__swiper-container {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}

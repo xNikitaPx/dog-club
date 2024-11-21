@@ -1,0 +1,13 @@
+.section {
+  &__title {
+    font-family: "Rowdies", sans-serif;
+    font-size: 56px;
+    line-height: 1.2;
+    &--center {
+      text-align: center;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 32px;
+    }
+  }
+}

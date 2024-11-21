@@ -1,0 +1,49 @@
+.form-field {
+  &__label {
+    display: block;
+  }
+
+  &__input {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid var(--color-primary-orange);
+    border-radius: 8px;
+    background-color: transparent;
+
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      line-height: 1.3;
+      color: var(--color-primary-orange);
+
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-black);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px 0 0 40px;
+    width: 32px;
+    height: 32px;
+    fill: var(--color-primary-orange);
+
+    @media screen and (max-width: $bp-tablet) {
+      margin: 8px 0 0 28px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

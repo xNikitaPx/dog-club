@@ -1,0 +1,39 @@
+.service-card {
+  width: 240px;
+  height: 240px;
+  border: 1px solid var(--color-secondary-pink);
+  border-radius: 16px;
+  background-image: linear-gradient(
+    180deg,
+    var(--color-primary-white) 0%,
+    #fffbf4 100%
+  );
+  box-shadow: 0px 4px 4px 0px #1818170d;
+
+  &__3,
+  &__4 {
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__1 {
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 96px;
+    height: 96px;
+    margin: 47px 72px 24px;
+    fill: var(--color-primary-black);
+  }
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--color-primary-orange);
+    margin: 0 71px 47px;
+  }
+}

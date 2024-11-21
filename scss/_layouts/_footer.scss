@@ -1,0 +1,225 @@
+.footer {
+  position: relative;
+  max-height: 238px;
+  max-width: 1444px;
+  margin: 0 auto;
+  background-color: var(--color-secondary-orange-light);
+  padding-bottom: 50px;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 0;
+    max-height: 100%;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    padding: 32px 0;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      gap: 24px;
+      padding: 14px 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+
+    @media screen and (max-width: $bp-desktop) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+
+  &__container-social {
+    flex-grow: 1;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    width: 192px;
+    height: 40px;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 92px;
+      height: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__icon-instagram {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    fill: transparent;
+    stroke: var(--color-primary-orange);
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &__icon-facebook {
+    width: 40px;
+    height: 40px;
+    fill: var(--color-primary-orange);
+    stroke: var(--color-primary-orange);
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+
+    @media screen and (max-width: $bp-desktop) {
+      align-items: center;
+    }
+  }
+
+  &__contact-container {
+    position: relative;
+    display: flex;
+    flex-basis: 50%;
+
+    @media screen and (max-width: $bp-desktop) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+
+  &__social-mobile {
+    display: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  &__form {
+    flex-grow: 1;
+    max-width: 320px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 0 auto;
+    }
+  }
+
+  &__form-fild {
+    position: relative;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    padding: 10px 24px 10px 56px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  &__input-cmc {
+    padding: 8px 24px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  &__form-field-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 8px 0 0 24px;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary-orange);
+  }
+
+  &__button {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.17;
+    padding: 8px 24px;
+    margin: 0 auto 16px;
+    color: var(--color-primary-white);
+    background-color: var(--color-primary-orange);
+    border: 2px solid var(--color-primary-orange);
+    border-radius: 4px;
+    cursor: pointer;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background-color: var(--color-secondary-orange);
+      border-color: var(--color-secondary-orange);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: -50px;
+    right: -20px;
+    width: 292px;
+    height: 304px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__image-mobile {
+    display: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: -154px;
+      left: -80px;
+      width: 128px;
+      height: 146px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      position: absolute;
+      top: -348px;
+      left: 50%;
+      margin-left: -64px;
+    }
+  }
+}
